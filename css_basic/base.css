@@ -1,0 +1,84 @@
+/* Defining custom properties (variables) */
+html {
+    --gray-100: hsl(276, 100%, 98%);
+    --gray-200: hsl(276, 82%, 91%);
+    --gray-300: hsl(276, 32%, 71%);
+    --gray-400: hsl(276, 21%, 53%);
+    --gray-500: hsl(276, 17%, 42%);
+    --gray-600: hsl(276, 14%, 31%);
+    --gray-700: hsl(276, 17%, 21%);
+    --gray-800: hsl(276, 21%, 13%);
+    --gray-900: hsl(276, 50%, 7%);
+
+    --red-100: hsl(0, 100%, 98%);
+    --red-200: hsl(0, 82%, 91%);
+    --red-300: hsl(0, 62%, 71%);
+    --red-400: hsl(0, 52%, 53%);
+    --red-500: hsl(0, 67%, 42%);
+    --red-600: hsl(0, 74%, 31%);
+    --red-700: hsl(0, 77%, 21%);
+    --red-800: hsl(0, 81%, 13%);
+    --red-900: hsl(0, 90%, 7%);
+
+    scroll-behavior: smooth;
+}
+
+/* Base reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--gray-800);
+    background-color: var(--gray-100);
+    min-height: 100vh;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5rem;
+    line-height: 1.25;
+    color: var(--gray-900);
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+    color: var(--red-500);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--red-600);
+    text-decoration: underline;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Lists */
+ul, ol {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
